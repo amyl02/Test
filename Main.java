@@ -1,3 +1,4 @@
+import java.math.*;
 
 /**
  * Klasse Main.
@@ -11,13 +12,14 @@ public class Main
     public static void main(String args[])
     {
         int obereGrenze = 100;
-        int mult = 1;
+        BigInteger mult = new BigInteger("1");
         
         for (int i = 1; i <= obereGrenze; i++)
         {
-            mult *= i;
+            String param = String.valueOf(i);
+            mult = mult.multiply(new BigInteger(param));
         }
         
-        System.out.print("Mult = " + mult);
+        System.out.println("Mult = " + mult);
     }
 }
