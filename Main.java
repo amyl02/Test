@@ -13,7 +13,7 @@ public class Main
     {
         int obereGrenze = 100;
         BigInteger mult = new BigInteger("1");
-        
+
         for (int i = 1; i <= obereGrenze; i++)
         {
             String param = String.valueOf(i);
